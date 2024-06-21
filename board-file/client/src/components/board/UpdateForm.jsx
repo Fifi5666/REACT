@@ -35,6 +35,7 @@ const UpdateForm = ({no, board, fileList, onUpdate, onDelete, isLoading, onDownl
         // 파일 업로드에서는
         // Content-Type : application/json -> multipart/form-data
         const formData = new FormData()
+        formData.append('no', no)
         formData.append('title', title)
         formData.append('writer', writer)
         formData.append('content', content)
