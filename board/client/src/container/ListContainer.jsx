@@ -26,6 +26,7 @@ const ListContainer = () => {
   return (
     <>
         {/* 게시글 목록(우리가 만들어 놓은) */}
+        {/* 어려워 */}
         <List boardList={boardList} isLoading={isLoading}/>
         {/* boardLsit 내려주기 */}
     </>
