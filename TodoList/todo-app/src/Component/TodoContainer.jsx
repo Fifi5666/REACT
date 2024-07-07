@@ -155,11 +155,11 @@ const TodoContainer = () => {
       const init = {
         method : 'PUT',
         headers : {
-          'Contents-Type' : 'application/json'
+          'Content-Type' : 'application/json'
         },
         body : JSON.stringify(data)
       }
-      const url = 'http://192.168.30.119:8080/todos'
+      const url = 'http://localhost:8080/todos'
       try {
         const response = await fetch(url, init)
         console.log(response)
@@ -209,7 +209,7 @@ const TodoContainer = () => {
         <TodoHeader/>
         <TodoInput onSubmit={onSubmit} input={input} onChange={onChange}/>
         <TodoList todoList={todoList} onToggle={onToggle} onRemove={onRemove}/>
-        <TodoFooter />
+        <TodoFooter onCompleteAll={onCompleteAll} onRemoveAll={onRemoveAll}/>
       </div>
     )
 }
