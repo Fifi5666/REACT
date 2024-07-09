@@ -156,7 +156,6 @@ const TodoContainer = () => {
         method : 'PUT',
         headers : {
           'Content-Type' : 'application/json'
-          // 오타 똑바로!!
         },
         body : JSON.stringify(data)
       }
